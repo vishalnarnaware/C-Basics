@@ -1,4 +1,5 @@
-//A perfect square is an integer which is the square of another integer. Write a program that reads
+//A perfect square is an integer which is the square of another integer.
+//Write a program that reads
 //a number and computes the first perfect square larger than this number.
 #include<stdio.h>
 
