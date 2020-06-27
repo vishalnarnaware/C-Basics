@@ -1,5 +1,6 @@
-//Write a program that reads number until a negative number is read and prints the number of
-//values read, the largest values, smallest value and the range
+//Write a program that reads number until a negative number is read
+//and prints the number of values read, the largest values,
+//smallest value and the range
 #include<stdio.h>
 
 int read(int *);
