@@ -1,4 +1,4 @@
-//Write a C Program to print the sum of cube of digits of a number (n=123, sum = 1+4+9 = 14)
+//Write a C Program to print the sum of cube of digits of a number
 //JUST TO BE CLEARER IT'S WRITTEN 'CUBE' IN QUESTION.
 //Therefore new example should be (n=123, sum = 1+8+27 = 36)
 #include<stdio.h>
