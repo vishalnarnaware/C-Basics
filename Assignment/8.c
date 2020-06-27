@@ -1,4 +1,5 @@
-//Write a C program to find the sum of digits of the entered number. (n=123 , sum=1+2+3=6)
+//Write a C program to find the sum of digits of the entered number.
+//(n=123 , sum=1+2+3=6)
 #include<stdio.h>
 
 int sum_of_digits(int);
