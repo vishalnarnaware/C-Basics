@@ -5,16 +5,23 @@ void push(int stack[MAX], int *top) {
     // function to insert element into Stack
     if (*top >= MAX) {
         printf("\n\tOverflow! Resetting Stack...");
-        *top = 0;
+        *top = 0;       // reset top to 0
     }
     else    {
         printf("\nEnter element: ");
         scanf("%d", &stack[*top]);
-        *top += 1;
+        *top += 1;      // increment top by 1
     }
 }
-void pop()  {
+void pop(int stack[MAX], int *top)  {
     // function to delete element from Stack
+    if(*top <= 0)   {
+        printf("\nUnderflow! Enter elements in Stack...");
+    }
+    else    {
+        *top -= 1;      // decrement top
+        printf("\nPopping off element: %d", stack[*top]);   // display deleted
+    }
 }
 void check()    {
     // function to check if given number is palindrome or not
@@ -39,7 +46,7 @@ int main(int argc, char const *argv[]) {
         switch(ch)  {                               // Driving block
             case 1: push(stack, &top);
                     break;
-            case 2: pop();
+            case 2: pop(stack, &top);
                     break;
             case 3: check();
                     break;
