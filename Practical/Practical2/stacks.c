@@ -26,8 +26,13 @@ void pop(int stack[MAX], int *top)  {
 void check()    {
     // function to check if given number is palindrome or not
 }
-void display()  {
+void display(int stack[MAX], int *top)  {
     // function to show elements of Stack
+    int i;
+    printf("\nStack : ");
+    for(i=0; i<*top; i++)   {
+        printf("%d ", stack[i]);
+    }
 }
 
 int main(int argc, char const *argv[]) {
@@ -50,7 +55,7 @@ int main(int argc, char const *argv[]) {
                     break;
             case 3: check();
                     break;
-            case 4: display();
+            case 4: display(stack, &top);
                     break;
             case 5: return 0;                       // No need to write break
             default: printf("\nWrong Choice!!! \t Enter between 1 to 5");
