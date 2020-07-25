@@ -13,9 +13,7 @@ void check()    {
 void display()  {
 
 }
-void exit() {
-    
-}
+
 int main(int argc, char const *argv[]) {
     int i, top, ch;
     int stack[MAX];
@@ -27,7 +25,8 @@ int main(int argc, char const *argv[]) {
         printf("\n3. Palindrome Check");
         printf("\n4. Display");
         printf("\n5. Exit");
-        printf("\nEnter your choice: ", &ch);
+        printf("\nEnter your choice: ");
+        scanf("%d", &ch);
         switch(ch)  {
             case 1: push();
                     break;
