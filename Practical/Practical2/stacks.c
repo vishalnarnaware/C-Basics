@@ -1,8 +1,17 @@
 #include <stdio.h>
 #define MAX 5   // maximum 5 elements can be inserted
 
-void push() {
+void push(int stack[MAX], int *top) {
     // function to insert element into Stack
+    if (*top >= MAX) {
+        printf("\n\tOverflow! Resetting Stack...");
+        *top = 0;
+    }
+    else    {
+        printf("\nEnter element: ");
+        scanf("%d", &stack[*top]);
+        *top += 1;
+    }
 }
 void pop()  {
     // function to delete element from Stack
@@ -15,7 +24,7 @@ void display()  {
 }
 
 int main(int argc, char const *argv[]) {
-    int i, top, ch;
+    int i, top=0, ch;
     int stack[MAX];
 
     while(1)    {       // Repeat again and again
@@ -28,7 +37,7 @@ int main(int argc, char const *argv[]) {
         printf("\nEnter your choice: ");            // Ask user for operation
         scanf("%d", &ch);                           // Get in ch
         switch(ch)  {                               // Driving block
-            case 1: push();
+            case 1: push(stack, &top);
                     break;
             case 2: pop();
                     break;
