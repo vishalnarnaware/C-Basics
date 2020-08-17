@@ -22,6 +22,16 @@ void insert(struct Node** head_ref, int new_data)
     (*head_ref) = new_node;
 }
 
+void printList(struct Node* node)
+{
+    struct Node* last;
+    while(node != NULL) {
+        printf("%d ", node -> data);
+        last = node;
+        node = node -> next;
+    }
+}
+
 int main(int argc, char const *argv[]) {
     struct Node* head = NULL;
     int temp, n, i;
