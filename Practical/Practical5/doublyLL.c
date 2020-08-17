@@ -73,5 +73,12 @@ int main(int argc, char const *argv[]) {
     printf("\n Created Doubly Linked List: ");
     printList(head);
 
+    printf("\n Enter element to be deleted: ");
+    scanf("%d", &temp);
+	deleteNode(&head, temp);
+
+    printf("\n Doubly Linked List after deletion of %d: ", temp);
+    printList(head);
+    
     return 0;
 }
