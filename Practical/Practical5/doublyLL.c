@@ -49,5 +49,9 @@ int main(int argc, char const *argv[]) {
         scanf("%d", &temp);
         insert(&head, temp);
     }
+
+    printf("\n Created Doubly Linked List: ");
+    printList(head);
+    
     return 0;
 }
