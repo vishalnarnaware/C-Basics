@@ -49,7 +49,6 @@ void check()    {
     else    {
         printf("\nNumber is Palindrome");
     }
-
 }
 void display(int stack[MAX], int *top)  {
     // function to show elements of Stack
@@ -63,7 +62,7 @@ void display(int stack[MAX], int *top)  {
 int main(int argc, char const *argv[]) {
     int i, top=0, ch, temp;
     int stack[MAX];
-
+    printf("\nAuthor: Vishal Narnaware");
     while(1)    {       // Repeat again and again
         printf("\n------**MENU**------");           // The driving Menu
         printf("\n1. Push");
