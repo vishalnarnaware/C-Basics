@@ -79,6 +79,6 @@ int main(int argc, char const *argv[]) {
 
     printf("\n Doubly Linked List after deletion of %d: ", temp);
     printList(head);
-    
+
     return 0;
 }
